@@ -23,5 +23,5 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
 The runtime complexity is $\Theta(n!)$ because there are $n!$ number of permutations, and though all possible permutations wont be given when using this method, it can't be bounded by anything other than that factor. 
-Best case input for this algorithm is $\Theta(n)$ if the input array is already sorted. 
+Best case input for this algorithm is $\Theta(n)$ if the input array is already sorted. The worst case is $\Theta(n!)$ as this would require every permutation to be tried before the sorted permutation is generated.
 When generating random permutations, the in practice time complexity could change, because the chances for randomly choosing the sorted permutation is $\frac{1}{n!}$. But asymptotically this can't be guarenteed, and the time complexity when choosing randomly would still be $\Theta(n!)$. 
