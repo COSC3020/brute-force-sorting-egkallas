@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/7eEMzrNd)
 # Brute-Force Sorting
 
 We talked about the complexity of the sorting problem, and used an argument over
@@ -20,3 +21,7 @@ randomly without memory instead of systematically trying them?
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+The runtime complexity is $\Theta(n!)$ because there are $n!$ number of permutations, and though all possible permutations won't always be given when using this method, it can't be bounded by anything other than that factor. 
+Best case input for this algorithm is $\Theta(n)$ if the input array is already sorted. The worst case is $\Theta(n!)$ as this would require every permutation to be tried before the sorted permutation is generated.
+When generating random permutations, the in practice time complexity could change, because the chances for randomly choosing the sorted permutation is $\frac{1}{n!}$. But asymptotically this can't be guarenteed, and the time complexity when choosing randomly would still be $\Theta(n!)$. 
