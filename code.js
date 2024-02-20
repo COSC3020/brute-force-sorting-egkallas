@@ -14,11 +14,10 @@ function swap(arr, x, y){
     arr[y] = temp;
 }
 
-function shuffle(a, n){
-    var i, j=n;
-    for (i=0; i < n; i++){
-        var ind = Math.floor(Math.random() * n);
-        swap(a, j-i-1, ind);
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1)); 
+        swap(a, i, j);
     }
     return a;
 }
@@ -38,3 +37,4 @@ function permutationSort(a) {
 }
 
 //work cited: https://www.geeksforgeeks.org/bogosort-permutation-sort/
+//https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
