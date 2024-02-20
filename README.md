@@ -21,3 +21,5 @@ randomly without memory instead of systematically trying them?
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+Best case input for this algorithm is $\Theta(n)$ if the input array is already sorted. 
